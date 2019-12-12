@@ -1,0 +1,13 @@
+https://developer.atlassian.com/blog/2015/05/the-power-of-git-subtree/
+	[alias]
+	  # subtree:
+	  sta = "!f() { git subtree add --prefix $2 $1 master --squash; }; f"
+	  stu = "!f() { git subtree pull --prefix $2 $1 master --squash; }; f"
+
+https://github.com/tpope/vim-pathogen
+
+  mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+
+  cd ~/.vim
+  git sta https://github.com/tpope/vim-pathogen.git bundle/tpope-vim-sennsible
